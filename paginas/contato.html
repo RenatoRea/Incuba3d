@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/contato.css">
+    <link rel="stylesheet" href="../style/header-footer.css">
+    <title>Contato</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <img class="cabecalho-logo" src="../imagens/logo_incuba3D_full.png" alt="logo">
+
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-home" href="../index.html">home</a>
+            <a class="cabecalho-menu-produtos" href="../paginas/produtos.html">produtos</a>
+            <a class="cabecalho-menu-contato" href="../paginas/contato.html">contato</a>
+        </nav>
+
+    </header>
+
+    <main class="container">
+
+        <section class="texto">
+            <h1>Fale Conosco</h1><br>
+            <h2>Duvidas, sugestões, orçamentos, elogios e critícas?</h2><br>
+            <p>Envie sempre que quiser</p><br>
+        </section>
+
+        <section class="contato">
+            <!--api para enviar email para o meu endeço-->
+
+            <form action="https://api.staticforms.xyz/submit" method="post">
+
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required><br>
+                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required><br>
+
+                <select name="contato" id="forma-contato">
+                    <option value="">Selecione a forma de contato</option>
+                    <option value="whatsapp">whatsapp</option>
+                    <option value="email">email</option>
+                </select>
+
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea><br>
+
+                <button type="submit">Enviar</button>
+
+                <!--essa entrada é o api que faz o contato chegar na caixa de mensagem, o value é gerado pelo api https://www.staticforms.xyz/-->
+                <input type="hidden" name="accessKey" value="53ef791b-ce79-445f-af19-19cf0053195b">
+
+                <!--após enviar a mensagem será redirecionado para a pagina obrigado-->
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <section class="rede-sociais">
+            <a href="https://m.facebook.com/incuba3d/photos/a.109249790779908/175068164198070/?type=3&_rdr"><img
+                    class="facebook" src="../imagens/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/incuba3d/"><img class="instagram" src="../imagens/instagram.png"
+                    alt="intagram"></a>
+            <a href="https://web.whatsapp.com/"><img class="whatsapp" src="../imagens/whats.png" alt="whatsapp"></a>
+        </section><br>
+
+        <img class="rodape-logo" src="../imagens/logo_incuba3D.png" alt="incuba 3d">
+    </footer>
+</body>
+
+</html>

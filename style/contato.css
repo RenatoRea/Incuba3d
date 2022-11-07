@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 50px;
+    margin: 120px 0 120px 0;
+    padding: 18px;
+    background-color: #cddbdf;
+
+}
+
+.contato input, select, textarea {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-style: none;
+}
+
+.texto {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #386e85;  
+    max-width: 400px;
+}
+h1{
+    font-size: 2em;
+    font-weight: bolder;
+}
+h2{
+    font-size: 1.5em;
+}
+textarea{
+    font-family: 'Montserrat', sans-serif;
+
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    color: #386e85;
+
+}
+.rede-sociais {
+    display: flex;
+    gap: 30px;
+}
+
+.facebook {
+    height: 30px;
+    width: 30px;
+}
+
+.instagram {
+    height: 30px;
+    width: 30px;
+}
+
+.whatsapp {
+    height: 30px;
+    width: 30px;
+}
