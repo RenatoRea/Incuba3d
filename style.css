@@ -14,13 +14,67 @@ body{
 
 }
 
-.container{
+.corpo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1;     
+    flex: 1;
 }
+
+.container{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.galeria {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.galeria-wrapper {
+    overflow-x: auto;
+}
+
+.galeria-wrapper::-webkit-scrollbar {
+    display: none;
+}
+/* https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+
+.seta-prev, .seta-next {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 25px;
+    line-height: 250px;
+    color: #0000004d;
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: all 600ms ease-in-out;
+}
+
+.seta-next {
+    left: auto;
+    right: 0;
+    background: transparent;
+}
+
+.seta-prev:hover {
+    color: black;
+}
+.seta-next:hover {
+    color: black;
+}
+
 
 .carrossel{
     display: flex;
