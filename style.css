@@ -75,23 +75,6 @@ body{
     color: black;
 }
 
-
-.carrossel{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.carrossel-1, .carrossel-3{
-    opacity: .5;
-}
-
-i{
-    display: flex;
-    opacity: .5;
-    font-size: 1.5em;
-} 
-
 .sobre{
     display: flex;
     justify-content: space-between;
@@ -132,8 +115,7 @@ h1{
 }
 
 .logo-borboleta{
-    position: relative;
-    
+    position: relative;    
     width: 160px;
     margin-left: 150px;
     filter: drop-shadow(5px 5px 5px black);
